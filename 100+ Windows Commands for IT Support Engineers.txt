@@ -1,0 +1,224 @@
+# 100+ Windows Commands for IT Support Engineers
+
+| Command      | Use                               |
+| ------------ | --------------------------------- |
+| `help`       | Shows available commands          |
+| `cls`        | Clears command prompt screen      |
+| `exit`       | Closes Command Prompt             |
+| `echo`       | Displays text or variables        |
+| `hostname`   | Shows computer name               |
+| `ver`        | Displays Windows version          |
+| `systeminfo` | Shows complete system information |
+| `whoami`     | Displays current logged-in user   |
+| `date`       | Shows or changes date             |
+| `time`       | Shows or changes time             |
+
+# File & Folder Commands
+
+| Command    | Use                       |
+| ---------- | ------------------------- |
+| `dir`      | Lists files and folders   |
+| `cd`       | Changes directory         |
+| `md`       | Creates a folder          |
+| `mkdir`    | Creates a folder          |
+| `rd`       | Removes folder            |
+| `rmdir`    | Deletes folder            |
+| `copy`     | Copies files              |
+| `xcopy`    | Advanced file copy        |
+| `robocopy` | Robust file transfer      |
+| `move`     | Moves files/folders       |
+| `del`      | Deletes files             |
+| `erase`    | Deletes files             |
+| `ren`      | Renames files             |
+| `tree`     | Displays folder structure |
+| `attrib`   | Changes file attributes   |
+| `type`     | Displays file contents    |
+| `more`     | Reads file page by page   |
+| `fc`       | Compares files            |
+| `find`     | Searches text in files    |
+| `findstr`  | Advanced text search      |
+| `compact`  | Compresses files          |
+
+# Network Commands
+
+| Command                              | Use                          |
+| ------------------------------------ | ---------------------------- |
+| `ipconfig`                           | Displays IP configuration    |
+| `ipconfig /all`                      | Detailed network information |
+| `ipconfig /release`                  | Releases IP address          |
+| `ipconfig /renew`                    | Renews IP address            |
+| `ipconfig /flushdns`                 | Clears DNS cache             |
+| `ping`                               | Tests connectivity           |
+| `tracert`                            | Tracks network route         |
+| `pathping`                           | Network diagnostics          |
+| `nslookup`                           | DNS lookup                   |
+| `netstat`                            | Shows network connections    |
+| `arp -a`                             | Displays ARP cache           |
+| `route print`                        | Shows routing table          |
+| `nbtstat`                            | NetBIOS information          |
+| `getmac`                             | Shows MAC addresses          |
+| `telnet`                             | Tests ports/services         |
+| `curl`                               | Downloads web content        |
+| `ftp`                                | File transfer protocol       |
+| `hostname`                           | Shows system hostname        |
+| `netsh`                              | Network configuration        |
+| `netsh wlan show profiles`           | Lists saved Wi-Fi profiles   |
+| `netsh wlan show interfaces`         | Wi-Fi status                 |
+| `netsh advfirewall show allprofiles` | Firewall status              |
+
+# User Management Commands
+
+| Command             | Use                    |
+| ------------------- | ---------------------- |
+| `net user`          | Lists local users      |
+| `net user username` | User details           |
+| `net localgroup`    | Lists groups           |
+| `net accounts`      | Password policies      |
+| `whoami /groups`    | User group memberships |
+| `logoff`            | Logs off user          |
+| `query user`        | Lists logged-in users  |
+| `qwinsta`           | Terminal sessions      |
+| `msg`               | Sends message to users |
+
+# Process Management Commands
+
+| Command                      | Use                     |
+| ---------------------------- | ----------------------- |
+| `tasklist`                   | Lists running processes |
+| `taskkill`                   | Ends process            |
+| `taskkill /PID`              | Ends process by PID     |
+| `taskkill /IM chrome.exe /F` | Force kills application |
+| `wmic process list brief`    | Process summary         |
+| `start`                      | Starts application      |
+| `shutdown`                   | Shutdown computer       |
+| `shutdown /r /t 0`           | Restart immediately     |
+| `shutdown /s /t 0`           | Shutdown immediately    |
+| `shutdown /a`                | Abort shutdown          |
+
+# Disk & Storage Commands
+
+| Command       | Use                           |
+| ------------- | ----------------------------- |
+| `diskpart`    | Disk management               |
+| `list disk`   | Lists disks (inside diskpart) |
+| `list volume` | Lists volumes                 |
+| `chkdsk`      | Checks disk errors            |
+| `chkdsk /f`   | Fixes disk errors             |
+| `defrag`      | Disk optimization             |
+| `fsutil`      | File system utilities         |
+| `vol`         | Shows volume label            |
+| `label`       | Changes volume label          |
+| `mountvol`    | Manages volumes               |
+| `format`      | Formats drive                 |
+| `cleanmgr`    | Disk cleanup                  |
+
+# System Diagnostics Commands
+
+| Command                   | Use                     |
+| ------------------------- | ----------------------- |
+| `msinfo32`                | System Information tool |
+| `dxdiag`                  | DirectX diagnostics     |
+| `perfmon`                 | Performance Monitor     |
+| `resmon`                  | Resource Monitor        |
+| `eventvwr`                | Event Viewer            |
+| `services.msc`            | Services console        |
+| `compmgmt.msc`            | Computer Management     |
+| `devmgmt.msc`             | Device Manager          |
+| `taskmgr`                 | Task Manager            |
+| `control`                 | Opens Control Panel     |
+| `winver`                  | Windows version         |
+| `powercfg /batteryreport` | Battery health report   |
+| `powercfg /energy`        | Energy report           |
+| `gpresult /r`             | Group Policy result     |
+| `driverquery`             | Installed drivers       |
+
+# System Repair Commands
+
+| Command                                      | Use                    |
+| -------------------------------------------- | ---------------------- |
+| `sfc /scannow`                               | Repairs system files   |
+| `DISM /Online /Cleanup-Image /RestoreHealth` | Repairs Windows image  |
+| `DISM /Online /Cleanup-Image /CheckHealth`   | Checks image health    |
+| `DISM /Online /Cleanup-Image /ScanHealth`    | Scans image corruption |
+| `bootrec /fixmbr`                            | Repairs MBR            |
+| `bootrec /fixboot`                           | Repairs boot sector    |
+| `bootrec /rebuildbcd`                        | Rebuilds boot records  |
+
+# Service Commands
+
+| Command             | Use                    |
+| ------------------- | ---------------------- |
+| `sc query`          | Lists services         |
+| `sc start service`  | Starts service         |
+| `sc stop service`   | Stops service          |
+| `net start`         | Lists running services |
+| `net stop service`  | Stops service          |
+| `net start service` | Starts service         |
+
+# Remote Support Commands
+
+| Command         | Use                  |
+| --------------- | -------------------- |
+| `mstsc`         | Remote Desktop       |
+| `ssh`           | Secure remote access |
+| `query session` | Remote sessions      |
+| `tscon`         | Session management   |
+| `quser`         | Remote users         |
+| `net use`       | Maps network drives  |
+
+# Printer Commands
+
+| Command               | Use                  |
+| --------------------- | -------------------- |
+| `printmanagement.msc` | Printer Management   |
+| `control printers`    | Opens printers       |
+| `net stop spooler`    | Stops print spooler  |
+| `net start spooler`   | Starts print spooler |
+
+# Windows Utilities (Daily IT Support)
+
+| Command            | Use                   |
+| ------------------ | --------------------- |
+| `appwiz.cpl`       | Programs and Features |
+| `ncpa.cpl`         | Network Connections   |
+| `sysdm.cpl`        | System Properties     |
+| `firewall.cpl`     | Windows Firewall      |
+| `inetcpl.cpl`      | Internet Options      |
+| `lusrmgr.msc`      | Local Users & Groups  |
+| `secpol.msc`       | Local Security Policy |
+| `gpedit.msc`       | Group Policy Editor   |
+| `regedit`          | Registry Editor       |
+| `certmgr.msc`      | Certificate Manager   |
+| `optionalfeatures` | Windows Features      |
+| `osk`              | On-screen keyboard    |
+| `magnify`          | Magnifier             |
+| `snippingtool`     | Screenshot tool       |
+| `calc`             | Calculator            |
+| `notepad`          | Opens Notepad         |
+| `write`            | WordPad               |
+| `explorer`         | File Explorer         |
+| `mrt`              | Malware Removal Tool  |
+| `cleanmgr`         | Disk Cleanup          |
+
+# Top 20 Commands Every IT Support Engineer Must Memorize
+
+1. `ipconfig /all`
+2. `ipconfig /flushdns`
+3. `ping`
+4. `tracert`
+5. `nslookup`
+6. `netstat -ano`
+7. `tasklist`
+8. `taskkill`
+9. `systeminfo`
+10. `whoami`
+11. `hostname`
+12. `gpresult /r`
+13. `sfc /scannow`
+14. `DISM /Online /Cleanup-Image /RestoreHealth`
+15. `chkdsk /f`
+16. `net user`
+17. `net use`
+18. `shutdown /r /t 0`
+19. `driverquery`
+20. `eventvwr`
