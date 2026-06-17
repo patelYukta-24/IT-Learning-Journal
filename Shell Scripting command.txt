@@ -1,0 +1,430 @@
+================================================================================
+               SHELL SCRIPTING COMMANDS A-Z FOR DEVOPS, CLOUD & SECURITY
+================================================================================
+
+# NOTE: Shell scripting uses Bash (Bourne Again Shell) primarily.
+# This covers Bash commands + scripting constructs used in DevOps automation.
+
+================================================================================
+                    BEGINNER COMMANDS (Day 1-7)
+================================================================================
+
+echo                - Print text or variable: echo "Hello World"
+var="value"         - Declare variable: name="Yukta"
+$var                - Access variable value: echo $name
+$1, $2, $3          - Script arguments: $1=first arg, $2=second arg
+$#                  - Total arguments count: echo "Args: $#"
+$*                  - All arguments as string: echo "$*"
+$@                  - All arguments as array: for arg in "$@"
+$0                  - Script filename: echo "Script: $0"
+$?                  - Last command exit status: echo $? (0=success)
+$$                  - Current shell PID: echo "PID: $$"
+$!                  - Last background job PID: echo $!
+export VAR=value    - Make variable available to child processes
+declare -i n=10     - Declare integer variable: declare -i count=5
+declare -a arr      - Declare array: declare -a names
+declare -r VAR=val  - Read-only variable: declare -r PI=3.14
+declare -x VAR=val  - Export variable: declare -x PATH="/usr/bin"
+read var            - Get user input: read name
+read -p "Prompt:" var - Prompt for input: read -p "Enter name: " name
+read -s var         - Silent input (password): read -s password
+test [condition]    - Evaluate condition: test -f file
+[condition]         - Shorthand for test: [ -f file ]
+[[condition]]       - Enhanced test: [[ $age -ge 18 ]]
+true                - Return success (0): true
+false               - Return failure (1): false
+
+================================================================================
+                    CONDITIONALS (if-else, case)
+================================================================================
+
+if condition; then  - Start if block: if [ -f file ]; then
+else                - Else block: else echo "Not found"
+elif                - Else if: elif [ -d dir ]; then
+fi                  - End if block: fi
+[[ $var = "value" ]] - String comparison: [[ $name = "Yukta" ]]
+[[ $var != "value" ]] - String not equal: [[ $role != "admin" ]]
+[[ $var -eq 10 ]]   - Integer equal: [[ $count -eq 10 ]]
+[[ $var -ne 10 ]]   - Integer not equal: [[ $count -ne 10 ]]
+[[ $var -gt 10 ]]   - Integer greater than: [[ $age -gt 18 ]]
+[[ $var -lt 10 ]]   - Integer less than: [[ $score -lt 50 ]]
+[[ $var -ge 10 ]]   - Integer >= : [[ $age -ge 18 ]]
+[[ $var -le 10 ]]   - Integer <= : [[ $score -le 100 ]]
+[ -f file ]         - File exists: [ -f /etc/passwd ]
+[ -d dir ]          - Directory exists: [ -d /var/log ]
+[ -r file ]         - File readable: [ -r config.txt ]
+[ -w file ]         - File writable: [ -w data.txt ]
+[ -x file ]         - File executable: [ -x script.sh ]
+[ -s file ]         - File not empty: [ -s log.txt ]
+[ -z string ]       - String empty: [ -z "$var" ]
+[ ! condition ]     - Not condition: [ ! -f file ]
+&&                  - AND operator: if [ -f a ] && [ -f b ]; then
+||                  - OR operator: if [ -f a ] || [ -d b ]; then
+case $var in        - Start case statement: case $os in
+pattern1)           - Match pattern1: "linux") echo "Linux" ;;
+pattern2)           - Match pattern2: "mac") echo "Mac" ;;
+*)                  - Wildcard (default): *) echo "Unknown" ;;
+;;                  - End pattern: ;;
+esac                - End case block: esac
+
+================================================================================
+                    LOOPS (for, while, until)
+================================================================================
+
+for var in list; do - Start for loop: for file in *.txt; do
+done                - End for loop: done
+for ((i=0;i<5;i++)) - C-style for: for ((i=0;i<5;i++)); do
+break               - Exit loop: break
+continue            - Skip to next: continue
+while condition; do - Start while loop: while [ $count -lt 10 ]; do
+done                - End while loop: done
+until condition; do - Start until loop: until [ $count -eq 10 ]; do
+done                - End until loop: done
+do                  - Loop body start: do echo $i
+&&                  - AND in loops: for i in 1 2 3; do echo $i && sleep 1; done
+||                  - OR in loops: command1 || command2
+$(command)          - Command substitution: date=$(date)
+${var}              - Variable with braces: echo ${name}
+${var:-default}     - Default if empty: echo ${name:-"Unknown"}
+${var#pattern}      - Remove prefix: ${file#.txt}
+${var%pattern}      - Remove suffix: ${file%.txt}
+${#var}             - String length: echo ${#name}
+${var:offset}       - Substring: ${name:0:5}
+${var//old/new}     - Replace all: ${text//old/new}
+${var^^}            - Upper case: ${name^^}
+${var,,}            - Lower case: ${name,,}
+
+================================================================================
+                    FUNCTIONS
+================================================================================
+
+function_name()     - Define function: check_status() {
+function name()     - Alternative: function check_status() {
+return value        - Return from function: return 0
+local var=value     - Local variable: local status="up"
+unset -f name       - Delete function: unset -f check_status
+declare -xf name    - Export function: declare -xf check_status
+shift               - Shift arguments: shift (now $2=$1)
+shift 2             - Shift N args: shift 2
+
+================================================================================
+                    FILE & DIRECTORY OPERATIONS
+================================================================================
+
+ls                  - List files: ls -la
+cd dir              - Change directory: cd /var/log
+pwd                 - Print working dir: pwd
+mkdir dir           - Create directory: mkdir backup
+mkdir -p dir        - Create nested: mkdir -p logs/2026/june
+rm file             - Remove file: rm old.log
+rm -r dir           - Remove directory: rm -r tmp/
+rm -f file          - Force remove: rm -f lock.txt
+cp src dest         - Copy file: cp config.yaml backup/
+cp -r src dest      - Copy directory: cp -r project/ new_project/
+mv src dest         - Move/rename: mv old.txt new.txt
+touch file          - Create empty file: touch new.py
+cat file            - View file: cat config.yaml
+cat > file          - Write to file: echo "text" > file
+cat >> file         - Append to file: echo "line" >> file
+head -n 10 file     - First 10 lines: head -n 10 log.txt
+tail -n 10 file     - Last 10 lines: tail -n 10 log.txt
+tail -f file        - Follow log: tail -f app.log
+less file           - Paginated view: less large.log
+more file           - Page by page: more output.txt
+find dir -name pat  - Find files: find . -name "*.log"
+locate file         - Find location: locate nginx.conf
+grep "pattern" file - Search text: grep "ERROR" app.log
+grep -i "pat" file  - Case insensitive: grep -i "error" log
+grep -v "pat" file  - Inverse match: grep -v "INFO" log
+grep -r "pat" dir   - Recursive search: grep -r "TODO" src/
+sed 's/old/new/g'   - Replace text: sed 's/foo/bar/g' file
+awk '{print $1}'    - Extract column: awk '{print $1}' data.csv
+cut -d',' -f1 file  - Extract field: cut -d',' -f1 users.csv
+sort file           - Sort lines: sort names.txt
+uniq file           - Remove duplicates: uniq sorted.txt
+wc -l file          - Count lines: wc -l logfile
+wc -w file          - Count words: wc -w text.txt
+wc -c file          - Count chars: wc -c data.txt
+wc file             - Count all: wc logfile
+xargs               - Pipe to command: find . -name "*.log" | xargs rm
+paste file1 file2   - Merge lines: paste users.txt ids.txt
+tr 'a-z' 'A-Z'      - Translate chars: tr 'a-z' 'A-Z'
+split file          - Split file: split -b 100M large.txt
+join file1 file2    - Join on key: join users.txt ids.txt
+
+================================================================================
+                    PERMISSIONS & OWNERSHIP
+================================================================================
+
+chmod 755 file      - Set permissions: chmod 755 script.sh
+chmod +x file       - Add execute: chmod +x run.sh
+chmod -R 755 dir    - Recursive: chmod -R 755 project/
+chown user:group file - Change owner: chown yukta:devteam app.log
+chown user file     - Change user: chown yukta file.txt
+chgrp group file    - Change group: chgrp devteam app.py
+ls -l file          - View permissions: ls -l script.sh
+umask 022           - Set default perms: umask 022
+stat file           - File stats: stat config.yaml
+
+================================================================================
+                    COMPRESSION & ARCHIVING
+================================================================================
+
+tar -czf archive.tar.gz files - Create gzip tar: tar -czf backup.tar.gz ./folder
+tar -xzf archive.tar.gz       - Extract gzip tar: tar -xzf backup.tar.gz
+tar -cf archive.tar files     - Create tar: tar -cf backup.tar ./data
+tar -xf archive.tar           - Extract tar: tar -xf backup.tar
+gzip file                     - Compress: gzip app.log
+gunzip file.gz                - Decompress: gunzip app.log.gz
+zip archive.zip files         - Create zip: zip backup.zip *.txt
+unzip archive.zip             - Extract zip: unzip backup.zip
+zcat file.gz                  - View gzipped: zcat log.gz
+
+================================================================================
+                    PROCESS MANAGEMENT
+================================================================================
+
+ps aux                - List all processes: ps aux
+ps -e                 - Short process list: ps -e
+top                   - Real-time monitor: top
+htop                  - Interactive viewer: htop
+pidof command         - Get process PID: pidof nginx
+pgrep pattern         - Find by name: pgrep chrome
+pkill pattern         - Kill by name: pkill nginx
+kill PID              - Terminate process: kill 1234
+kill -9 PID           - Force kill: kill -9 1234
+kill -15 PID          - SIGTERM: kill -15 1234
+killall name          - Kill all instances: killall chrome
+nohup command &       - Run background: nohup server.sh &
+jobs                  - List background jobs: jobs
+fg %job               - Bring to foreground: fg %1
+bg %job               - Resume background: bg %1
+wait                  - Wait for background: wait
+wait PID              - Wait for specific: wait 1234
+sleep sec             - Pause script: sleep 5
+disown PID            - Remove from shell: disown 1234
+
+================================================================================
+                    SYSTEM MONITORING
+================================================================================
+
+df -h                 - Disk usage: df -h
+du -sh dir            - Directory size: du -sh /var/log
+free -m               - Memory usage: free -m
+uptime                - System uptime: uptime
+vmstat                - CPU/memory/IO: vmstat
+iostat                - Disk I/O: iostat
+sar -u                - Historical CPU: sar -u
+whoami                - Current user: whoami
+who                   - Logged users: who
+id user               - User ID: id yukta
+hostname              - System name: hostname
+date                  - Current date: date
+cal                   - Calendar: cal
+uname -a              - System info: uname -a
+lsof                  - Open files: lsof -i :80
+dmesg                 - Kernel messages: dmesg
+journalctl            - Systemd logs: journalctl
+lsblk                 - Block devices: lsblk
+fdisk -l              - Disk partitions: fdisk -l
+
+================================================================================
+                    NETWORKING
+================================================================================
+
+ping host             - Test connectivity: ping 8.8.8.8
+curl URL              - HTTP request: curl https://api.example.com
+curl -s URL           - Silent curl: curl -s https://api.com
+wget URL              - Download file: wget https://example.com/file.zip
+wget -O file URL      - Save as: wget -O output.zip https://...
+ssh user@host         - Remote login: ssh yukta@server.example.com
+scp src user@host:dst - Secure copy: scp file.txt yukta@host:/path
+nslookup domain       - DNS lookup: nslookup google.com
+dig domain            - DNS details: dig example.com
+netstat -tulnp        - Network stats: netstat -tulnp
+ss -tulnp             - Socket stats: ss -tulnp
+ifconfig              - Network config: ifconfig (legacy)
+ip addr show          - IP config: ip addr show
+traceroute host       - Trace route: traceroute google.com
+mtr host              - Network path: mtr google.com
+tcpdump -i eth0       - Capture packets: tcpdump -i eth0
+nmap host             - Port scan: nmap 192.168.1.1
+nc -lvnp port         - Netcat listener: nc -lvnp 8080
+
+================================================================================
+                    USER & GROUP MANAGEMENT
+================================================================================
+
+useradd name          - Create user: useradd devuser
+deluser name          - Delete user: deluser devuser
+passwd user           - Change password: passwd yukta
+usermod -aG group user - Add to group: usermod -aG devteam yukta
+groupadd name         - Create group: groupadd devteam
+groupdel name         - Delete group: groupdel devteam
+sudo command          - Run as superuser: sudo apt update
+sudo su               - Switch to root: sudo su
+su - user             - Switch user: su - root
+
+================================================================================
+                    SCHEDULING & AUTOMATION
+================================================================================
+
+crontab -e            - Edit cron: crontab -e
+crontab -l            - List cron: crontab -l
+at time command       - Schedule once: at 2:00 PM echo "done"
+systemctl start svc   - Start service: systemctl start nginx
+systemctl stop svc    - Stop service: systemctl stop nginx
+systemctl enable svc  - Enable service: systemctl enable nginx
+systemctl disable svc - Disable: systemctl disable nginx
+systemctl status svc  - Check status: systemctl status nginx
+logrotate             - Rotate logs: logrotate /etc/logrotate.conf
+
+================================================================================
+                    ERROR HANDLING & DEBUGGING
+================================================================================
+
+set -e                - Exit on error: set -e
+set -x                - Debug mode: set -x
+set -v                - Verboselog: set -v
+trap cmd signal       - Catch signal: trap "echo Done" EXIT
+||                    - On error: cmd1 || cmd2
+&&                    - On success: cmd1 && cmd2
+2> file               - Redirect stderr: command 2> error.log
+> file                - Redirect stdout: command > output.log
+<> file               - Redirect both: command &> all.log
+:                     - No-op (null): : # does nothing
+false || true         - Force success: false || true
+
+================================================================================
+                    GITHUB CLI (gh) IN SHELL
+================================================================================
+
+gh repo create name   - Create repo: gh repo create myproject
+gh pr create          - Create PR: gh pr create
+gh pr list            - List PRs: gh pr list
+gh issue create       - Create issue: gh issue create
+gh auth login         - Login: gh auth login
+gh run list           - List runs: gh run list
+
+================================================================================
+                    SHELL SPECIFIC (BASH, ZSH)
+================================================================================
+
+bash script.sh        - Run with bash: bash script.sh
+. script.sh           - Run in current: . script.sh (same as source)
+source script.sh      - Load script: source .env
+bash -x script.sh     - Debug run: bash -x script.sh
+shopt -s autocd       - Set option: shopt -s autocd
+shopt -u autocd       - Unset option: shopt -u autocd
+echo $0               - Current shell: echo $0
+exec command          - Replace shell: exec bash
+
+================================================================================
+                    CATEGORIES FOR QUICK REFERENCE
+================================================================================
+
+INPUT/OUTPUT:         echo, read, cat, >, >>, <, 2>, 2>&1
+VARIABLES:            var={}, $1,$2,$#,$*,$@,$?,$$,$!,export,declare,local,shift
+CONDITIONALS:         if, else, elif, fi, case, esac, [[, ], test, &&, ||
+LOOPS:                for, while, until, do, done, break, continue
+FUNCTIONS:            function_name(), return, local, unset -f, declare -xf
+FILES:                ls, cd, pwd, mkdir, rm, cp, mv, touch, cat, head, tail
+TEXT:                 grep, sed, awk, cut, sort, uniq, wc, tr, paste, xargs
+PERMISSIONS:          chmod, chown, chgrp, ls -l, umask, stat
+COMPRESS:             tar, gzip, gunzip, zip, unzip, zcat
+PROCESS:              ps, top, htop, kill, pkill, pgrep, jobs, wait, sleep
+SYSTEM:               df, du, free, uptime, vmstat, iostat, hostname, date
+NETWORK:              ping, curl, wget, ssh, scp, netstat, ss, dig, nmap
+USERS:                useradd, passwd, sudo, su, groupadd, id
+SCHEDULE:             crontab, at, systemctl, logrotate
+ERROR:                set -e, trap, ||, &&, 2>, exec
+GITHUB:               gh repo create, gh pr create, gh issue create
+
+================================================================================
+                    ESSENTIAL COMMANDS BY CAREER LEVEL
+================================================================================
+
+BEGINNER (First Week):
+1. echo         - Print text
+2. var="val"    - Store variable
+3. if [condition] - Check condition
+4. for i in 1 2 3 - Loop
+5. grep "txt" file - Search
+6. cat file     - View file
+7. ls, cd, pwd  - Navigate
+8. chmod +x     - Make executable
+9. ./script.sh  - Run script
+10. echo $var   - Print variable
+
+INTERMEDIATE (Month 1):
+1. sed          - Replace text
+2. awk          - Extract columns
+3. find         - Search files
+4. tar          - Archive
+5. curl/wget    - Download
+6. ps, kill     - Process control
+7. crontab      - Schedule jobs
+8. ssh, scp     - Remote access
+9. Functions    - Group commands
+10. Error handling (set -e, trap)
+
+EXPERT (Advanced):
+1. Command substitution $(cmd)
+2. Parameter expansion ${var}
+3. xargs, parallel execution
+4. Regular expressions
+5. Debugging (set -x, bash -x)
+6. Process substitution
+7. Named pipes
+8. Shared libraries
+9. Shell options (shopt)
+10. Custom aliases
+
+================================================================================
+                    SAMPLE SHELL SCRIPT FOR DEVOPS
+================================================================================
+
+#!/bin/bash
+# Server Health Check Script
+
+checkServer() {
+    local server=$1
+    local status=$(curl -sI "$server" | head -n 1 | cut -d' ' -f2)
+    
+    if [ "$status" == "200" ]; then
+        echo "$server is UP"
+        return 0
+    else
+        echo "$server is DOWN"
+        return 1
+    fi
+}
+
+servers=("http://google.com" "http://github.com" "http://invalid.xyz")
+
+checkAllServers() {
+    for server in "${servers[@]}"; do
+        checkServer "$server" &
+    done
+    wait
+}
+
+echo "Starting server health check..."
+checkAllServers
+echo "Health check completed!"
+
+================================================================================
+                    FOR YOUR AWS/DEVOPS CAREER PATH
+================================================================================
+
+Top 10 Shell Scripting Commands for DevOps:
+1.  echo          - Log messages in scripts
+2.  if [condition] - Check file/process existence
+3.  for loop      - Loop through files/servers
+4.  grep          - Search logs for errors
+5.  curl          - Test APIs/endpoints
+6.  tar           - Archive/deploy code
+7.  chmod         - Set file permissions
+8.  ps, kill      - Process management
+9.  crontab       - Schedule backup jobs
+10. function()    - Create reusable code blocks
