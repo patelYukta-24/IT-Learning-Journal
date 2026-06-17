@@ -1,0 +1,222 @@
+================================================================================
+                    LINUX COMMANDS A-Z FOR DEVOPS, CLOUD & SYSTEMS
+                    Complete Reference with 1-Line Use Cases
+================================================================================
+
+# FILE AND DIRECTORY MANAGEMENT
+# Manage files and directories efficiently
+ls          - List directory contents (e.g., ls -la shows all files with details)
+cd          - Change current directory (e.g., cd /var/log navigates to logs)
+pwd         - Print current directory path (e.g., pwd shows where you are)
+mkdir       - Create new directories (e.g., mkdir backup creates backup folder)
+touch       - Create empty files (e.g., touch new.py creates empty Python file)
+cp          - Copy files or directories (e.g., cp file.txt backup/ copies file)
+mv          - Move or rename files/directories (e.g., mv old.txt new.txt renames)
+rm          - Remove files or directories (e.g., rm old.log deletes file)
+ln          - Create hard or symbolic links (e.g., ln -s /old/path /new/link)
+
+# SEARCHING AND VIEWING FILES
+# Find and inspect data quickly
+find        - Search for files and directories (e.g., find . -name "*.log")
+grep        - Search for patterns in files (e.g., grep "ERROR" app.log)
+cat         - Display or concatenate file contents (e.g., cat config.yaml)
+less        - Open files for paginated viewing (e.g., less large.log)
+head        - Display first few lines of a file (e.g., head -5 config.txt)
+tail        - Display last few lines of a file (e.g., tail -f app.log follows logs)
+
+# TEXT EDITORS
+# Essential for modifying configuration files
+vi/vim      - Advanced text editor for experts (e.g., vi /etc/nginx/nginx.conf)
+nano        - User-friendly text editor (e.g., nano config.ini)
+
+# COMPRESSION AND ARCHIVING
+# Optimize storage and backup
+tar         - Archive and extract files (e.g., tar -czf backup.tar.gz ./folder)
+gzip        - Compress files (e.g., gzip app.log compresses log file)
+gunzip      - Decompress files (e.g., gunzip app.log.gz restores original)
+
+# NETWORKING
+# Troubleshoot and manage networks
+wget        - Download files from the web (e.g., wget https://example.com/file.zip)
+curl        - Transfer data between systems (e.g., curl https://api.example.com/status)
+ssh         - Log into remote servers securely (e.g., ssh yukta@server.example.com)
+scp         - Copy files securely across servers (e.g., scp file.txt user@host:/path)
+ping        - Test network connectivity (e.g., ping 8.8.8.8 checks connection)
+netstat     - Display network statistics (e.g., netstat -tulpn shows open ports)
+ifconfig    - Configure network interfaces (e.g., ifconfig views IP config - legacy)
+dig         - Perform DNS lookups (e.g., dig example.com troubleshoots DNS)
+nc          - Netcat for reading/writing over network (e.g., nc -lvnp 8080 listener)
+ss          - Socket statistics (modern netstat) (e.g., ss -tulpn shows sockets)
+nmap        - Scan for open/closed ports (e.g., nmap 192.168.1.1 finds services)
+traceroute  - Trace packet route (e.g., traceroute google.com shows path)
+tcpdump     - Capture packets for analysis (e.g., tcpdump -i eth0 captures traffic)
+
+# SYSTEM ADMINISTRATION
+# Handle permissions, processes, and users
+chmod       - Change file permissions (e.g., chmod 755 script.sh grants execute)
+chown       - Change file ownership (e.g., chown yukta:devteam app.log)
+chgrp       - Change group ownership (e.g., chgrp devteam app.py)
+ps          - List running processes (e.g., ps aux shows all processes)
+top         - Monitor system performance (e.g., top live-monitors processes)
+kill        - Terminate processes (e.g., kill -15 1234 sends SIGTERM)
+pkill       - Kill process by name (e.g., pkill nginx stops nginx)
+pgrep       - Find process by name (e.g., pgrep chrome finds Chrome)
+df          - Display disk usage (e.g., df -h shows disk space - 100% = crash)
+du          - Estimate file/directory size (e.g., du -sh /var/log checks size)
+free        - Show memory usage (e.g., free -m monitors RAM available memory)
+uname       - Print system information (e.g., uname -a shows all system info)
+lsof        - List open files and processes (e.g., lsof -i :80 lists port 80)
+uptime      - Check server load averages (e.g., uptime shows load and time)
+vmstat      - Get CPU, memory, and IO snapshot (e.g., vmstat system stats)
+iostat      - View detailed disk I/O metrics (e.g., iostat disk performance)
+dmesg       - Read kernel messages (e.g., dmesg finds OOM kills or segfaults)
+journalctl  - View systemd master log (e.g., journalctl system logs)
+sar         - Review historical stats (e.g., sar -u historical CPU stats)
+strace      - Trace system calls and signals (e.g., strace ./app traces calls)
+
+# USER MANAGEMENT
+# Commands for managing user accounts
+useradd     - Create new user account (e.g., useradd devuser creates user)
+passwd      - Change user password (e.g., passwd yukta changes password)
+su          - Switch to another user (e.g., su - root switches to root)
+sudo        - Execute commands as another user (e.g., sudo apt update)
+usermod     - Modify user accounts (e.g., usermod -aG devteam yukta adds group)
+groupadd    - Create new group (e.g., groupadd devteam creates group)
+id          - Display user and group IDs (e.g., id yukta shows IDs)
+groupmod    - Rename group keeping members (e.g., groupmod oldname newname)
+visudo      - Safely edit /etc/sudoers (e.g., visudo edits sudo with check)
+umask       - Set default permissions for new files (e.g., umask 022 defaults)
+
+# SCHEDULING AND AUTOMATION
+# Automate repetitive tasks
+crontab     - Schedule recurring jobs (e.g., crontab -e edits cron schedule)
+at          - Schedule one-time tasks (e.g., at 2:00 PM runs task once)
+history     - Display command history (e.g., history shows past commands)
+source      - Execute commands from file in current shell (e.g., source .env)
+cron        - Background job scheduler (e.g., cron runs scheduled tasks)
+
+# FILE SYSTEM MANAGEMENT
+# Maintain and modify file systems
+mkfs        - Format new file system (e.g., mkfs.ext4 /dev/sdb1 formats)
+mount       - Mount file systems (e.g., mount /dev/sdb1 /mnt/data)
+umount      - Unmount file systems (e.g., umount /mnt/data unmounts)
+lsblk       - List block devices and mount points (e.g., lsblk storage devices)
+fdisk       - List and manage partitions (e.g., fdisk -l shows partitions)
+chroot      - Change root directory (e.g., chroot /secure/env for security)
+ldd         - Show shared libraries for binary (e.g., ldd ./app shows libs)
+
+# DEVELOPMENT UTILITIES
+# Boost productivity
+sed         - Edit text streams or files (e.g., sed 's/old/new/g' file replaces)
+awk         - Process and analyze text data (e.g., awk '{print $3}' extracts col)
+diff        - Compare files line by line (e.g., diff config1.yaml config2.yaml)
+rsync       - Synchronize files between locations (e.g., rsync -avz ./local remote:)
+tee         - Redirect output to multiple files (e.g., tee out.txt writes + displays)
+cut         - Extract sections from text (e.g., cut -d',' -f1 data.csv CSV field)
+wc          - Count words, lines, and characters (e.g., wc -l logfile counts lines)
+sort        - Arrange lines in order (e.g., sort names.txt sorts alphabetically)
+uniq        - Remove duplicate lines (e.g., uniq sorted.txt removes duplicates)
+tr          - Translate or delete characters (e.g., tr 'a-z' 'A-Z' uppercase)
+paste       - Combine lines of files (e.g., paste file1 file2 merges lines)
+xargs       - Pipe outputs to commands (e.g., find . -name "*.log" | xargs rm)
+split       - Split files into chunks (e.g., split -b 100M large.txt chunk)
+join        - Join lines of two files (e.g., join file1 file2 merges on key)
+
+# SECURITY
+# Manage keys and encryption
+ssh-keygen  - Generate SSH keys (e.g., ssh-keygen -t ed25519 creates key)
+iptables    - Configure firewall rules (e.g., iptables -A INPUT -p tcp --dport 80 ACCEPT)
+ssh-agent   - Manage SSH keys in memory (e.g., ssh-add adds key to agent)
+keyring     - Manage authentication keys (e.g., keyring stores credentials)
+
+# PROCESS MANAGEMENT
+# Control and monitor processes
+nice        - Adjust process priority (e.g., nice -n 10 long-task low priority)
+renice      - Change process priority (e.g., renice -5 1234 increases priority)
+killall     - Kill all processes by name (e.g., killall chrome kills Chrome)
+
+# MISCELLANEOUS
+# Additional commands to streamline workflow
+alias       - Create command shortcuts (e.g., alias ll='ls -la' faster typing)
+whois       - Query domain registration (e.g., whois example.com domain info)
+who         - Show logged-in users (e.g., who lists active users)
+whoami      - Display current user (e.g., whoami shows your username)
+hostname    - Display system name (e.g., hostname shows server name)
+date        - Display or set system time (e.g., date shows timestamp)
+echo        - Display variables or write to file (e.g., echo $PATH shows path)
+printf      - Print formatted output (e.g., printf "Name: %s" yukta formatted)
+read        - Read user input (e.g., read name prompts for input)
+test        - Evaluate file conditions (e.g., test -f file checks if exists)
+expr        - Evaluate expressions (e.g., expr 5 + 3 does math)
+
+================================================================================
+                         CATEGORIES FOR QUICK REFERENCE
+================================================================================
+
+FILE/DIRECTORY: ls, cd, pwd, mkdir, touch, cp, mv, rm, ln, find, grep, cat, less, head, tail
+NETWORKING:     ping, curl, wget, ssh, scp, netstat, ifconfig, dig, nc, ss, nmap, traceroute, tcpdump
+SYSTEM:         ps, top, kill, df, du, free, uname, lsof, uptime, vmstat, iostat, dmesg, journalctl
+PERMISSIONS:    chmod, chown, chgrp, visudo, umask
+USERS:          useradd, passwd, su, sudo, usermod, groupadd, id, groupmod
+PROCESS:        ps, top, kill, pkill, pgrep, nice, renice, killall
+STORAGE:        df, du, mount, umount, lsblk, fdisk, mkfs, tar, gzip, gunzip
+TEXT:           vi, vim, nano, sed, awk, cut, wc, sort, uniq, tr, paste, head, tail, cat, less
+SECURITY:       ssh-keygen, iptables, ssh-agent, chmod, chown
+AUTOMATION:     crontab, at, history, source, cron
+
+================================================================================
+                         ESSENTIAL COMMANDS BY MISSION
+================================================================================
+
+SYSTEM HEALTH & MONITORING:
+  uptime     - Check server load averages
+  free       - Monitor RAM usage and check 'available' memory
+  df         - Track disk usage (100% means apps will crash)
+  top        - Live monitor for processes
+  htop       - Colorful, user-friendly version of top
+  vmstat     - Get snapshot of CPU, memory, and IO
+  iostat     - View detailed disk I/O metrics
+
+LOGS & FILES:
+  dmesg      - Read kernel messages for OOM kills or segfaults
+  journalctl - View the systemd master log
+  sar        - Review historical stats
+  grep       - Search text and find patterns
+  sed        - Stream editor for in-place text replacement
+  awk        - Extract columns from text output
+  find       - Locate files by name, type, or size
+  du         - Check directory sizes
+
+NETWORK DIAGNOSTICS:
+  curl/wget  - Test HTTP requests and timing
+  ss         - Check socket stats and open ports
+  netstat    - Legacy version of ss
+  dig        - Troubleshoot DNS lookups
+  ip addr    - View IP configuration and interface status
+  ifconfig   - Legacy IP configuration
+  mtr        - Combine traceroute and ping to find network loss
+  tcpdump    - Capture packets for detailed analysis
+  nmap       - Scan for open, closed, or filtered ports
+
+DEPLOY & AUTOMATE:
+  tar        - Archive and compress files
+  rsync      - Sync files across environments
+  tmux       - Keep terminal sessions alive if SSH dies
+  crontab    - Schedule recurring jobs
+  logrotate  - Auto-manage log files to prevent disk filling
+
+================================================================================
+                         FOR YOUR AWS/DEVOPS CAREER PATH
+================================================================================
+
+Top 10 Commands to Master First (Daily Use):
+1.  ls     - Navigate and list files
+2.  cd     - Change directories
+3.  grep   - Search logs and configs
+4.  cat    - View config files
+5.  chmod  - Set file permissions
+6.  ssh    - Connect to remote servers (AWS EC2)
+7.  ps     - Check running processes
+8.  df     - Monitor disk space
+9.  tail   - Follow log files in real-time
+10. cp/mv  - Manage files safely
