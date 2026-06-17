@@ -1,0 +1,276 @@
+================================================================================
+              GITHUB (Git) COMMANDS A-Z: BEGINNER TO EXPERT
+                            Complete Reference
+================================================================================
+
+# NOTE: GitHub uses Git commands. GitHub CLI (gh) adds GitHub-specific commands.
+# This list covers both Git (core) and gh (GitHub CLI) commands.
+
+================================================================================
+                    BEGINNER COMMANDS (Day 1-7)
+================================================================================
+
+git init              - Initialize a new Git repository in current directory
+git clone [url]       - Create local copy of remote repository (e.g., git clone https://github.com/user/repo.git)
+git status            - Check modified files and staging status
+git add [file]        - Add file to staging area for next commit
+git add -A            - Add all new and changed files to staging area
+git commit -m "[msg]" - Commit staged changes with descriptive message
+git log               - View commit history for current branch
+git log --oneline     - View commit history briefly (one line per commit)
+git log --summary     - View commit history with file changes detailed
+git branch            - List all local branches (asterisk = current branch)
+git checkout [branch] - Switch to existing branch
+git checkout -b [name] - Create new branch and switch to it
+git push origin [branch] - Push local branch commits to remote repository
+git pull              - Fetch and merge commits from remote to local
+git remote -v         - View remote repository URL for current repo
+git config --global user.name "[name]" - Set username for commit credits
+git config --global user.email "[email]" - Set email for commit history
+
+================================================================================
+                    INTERMEDIATE COMMANDS (Week 2-4)
+================================================================================
+
+git rm [file]         - Delete file from project and stage removal
+git rm -r [folder]    - Remove file or folder recursively
+git mv [old] [new]    - Move/rename file and stage the move
+git diff              - Show changes not yet staged (working vs staged)
+git diff --staged     - Show changes staged but not committed
+git diff [branch1] [branch2] - Preview changes before merging branches
+git reset [file]      - Unstage file while keeping changes in working directory
+git reset --hard [commit] - Clear staging + rewrite working tree from commit
+git stash             - Save modified/staged changes temporarily (dirty directory)
+git stash list        - List all stashed change stacks
+git stash pop         - Apply latest stash to working directory
+git stash drop        - Discard changes from top of stash stack
+git stash clear       - Remove all stashed entries
+git merge [branch]    - Merge specified branch history into current branch
+git merge [src] [tgt] - Merge source branch into target branch
+git branch [name]     - Create new branch at current commit
+git branch -a         - List all branches (local + remote)
+git branch -d [name]  - Delete local branch
+git branch -m [old] [new] - Rename local branch
+git branch --delete --force [name] - Force delete branch (even if unmerged)
+git checkout -b [name] origin/[name] - Clone remote branch and switch to it
+git push -u origin [branch] - Push changes and remember branch as tracking
+git push origin --delete [branch] - Delete remote branch
+git pull origin [branch] - Pull changes from specific remote branch
+git remote add [alias] [url] - Add remote repository as alias
+git remote set-url origin [url] - Set repository's origin URL to new URL
+git fetch [alias]     - Fetch all branches from remote without merging
+git fetch --all       - Fetch all remotes and branches
+git show [SHA]        - Show any Git object in human-readable format
+
+================================================================================
+                    EXPERT COMMANDS (Month 2+)
+================================================================================
+
+git rebase [branch]   - Apply current branch commits ahead of specified branch
+git rebase -i [commit] - Interactive rebase (edit, reorder, squash commits)
+git log branchB..branchA - Show commits on branchA not on branchB
+git log --follow [file] - Show commits that changed file (even across renames)
+git log --stat -M     - Show logs with indication of moved paths
+git log --grep "[text]" - Search commit history by message text
+git log -p            - Show diff of changes in each commit
+git log --author="[name]" - Filter commits by author name
+git log --since="2 weeks" - Show commits from last 2 weeks
+git cherry-pick [commit] - Apply specific commit to current branch
+git revert [commit]   - Create new commit that undoes specified commit
+git tag [name]        - Create lightweight tag at current commit
+git tag -a [name] -m "[msg]" - Create annotated tag with message
+git tag               - List all tags
+git tag -d [name]     - Delete local tag
+git push origin --tags - Push all tags to remote
+git push origin :tag [name] - Delete tag from remote
+git archive -o file.zip HEAD - Create archive of repository at commit
+git worktree add [path] [branch] - Create new working directory for branch
+git bisect start      - Start binary search to find introducing commit
+git bisect good       - Mark current commit as good in bisect
+git bisect bad        - Mark current commit as bad in bisect
+git bisect reset      - End bisect and return to original branch
+git clean -f          - Remove untracked files from working directory
+git clean -fd         - Remove untracked files and directories
+git gc                - Run garbage collection (optimize repository)
+git prune             - Remove unreachable objects from repository
+git reflog            - Show all times HEAD was updated (recover lost commits)
+git fsck              - Check repository integrity (find corruption)
+git sha1sum [file]    - Show SHA1 hash of file content
+
+================================================================================
+                    GITHUB CLI (gh) COMMANDS
+================================================================================
+
+gh repo create [name] - Create new GitHub repository from CLI
+gh repo clone [owner]/[repo] - Clone repository using GitHub CLI
+gh repo view [owner]/[repo] - View repository details in browser
+gh repo list [owner]  - List repositories for GitHub user/org
+gh issue create       - Create new issue on repository
+gh issue list         - List issues in current repository
+gh issue view [number] - View issue details
+gh issue close [number] - Close issue by number
+gh pr create          - Create pull request from current branch
+gh pr list            - List pull requests in repository
+gh pr view [number]   - View pull request details
+gh pr checkout [number] - Checkout pull request as local branch
+gh pr merge [number]  - Merge pull request to base branch
+gh pr close [number]  - Close pull request without merging
+gh auth login         - Authenticate with GitHub (login)
+gh auth status        - Check authentication status
+gh whoami             - Show current authenticated GitHub user
+gh config set [key] [value] - Set GitHub CLI configuration option
+gh run list           - List GitHub Actions workflow runs
+gh run view [run-id]  - View workflow run details
+gh secret set [name]  - Set repository secret for Actions
+gh workflow list      - List all workflows in repository
+
+================================================================================
+                    GIT CONFIG COMMANDS
+================================================================================
+
+git config --list     - List all Git configuration settings
+git config --global --list - List global configuration only
+git config --get [key] - Get specific configuration value
+git config --unset [key] - Remove configuration setting
+git config --global core.editor "nano" - Set default text editor globally
+git config --global merge.conflictstyle diff3 - Set merge conflict style
+git config --global init.defaultBranch main - Set default branch name
+git config --global pull.rebase false - Set pull behavior (merge vs rebase)
+
+================================================================================
+                    ADVANCED WORKFLOW COMMANDS
+================================================================================
+
+git worktree add [path] [branch] - Create separate working dir for branch
+git submodule add [url] [path]  - Add submodule (nested repo) to project
+git submodule update --init     - Initialize and update submodules
+git submodule foreach [cmd]     - Run command in each submodule
+git archive -o backup.zip HEAD  - Create ZIP archive of repository
+git bundle create [file] HEAD   - Create bundle of repository for transfer
+git bundle verify [file]        - Verify bundle integrity
+git fast-import [file]          - Import data in fast-import format
+git shell                         - Run restricted shell for Git operations
+git wrap                            - Wrap Git commands with custom behavior
+
+================================================================================
+                    CATEGORIES FOR QUICK REFERENCE
+================================================================================
+
+GETTING & CREATING:
+  git init, git clone, git remote add, git remote set-url
+
+SNAPSHOTTING:
+  git status, git add, git commit, git rm, git diff, git reset
+
+BRANCHING & MERGING:
+  git branch, git checkout, git merge, git rebase, git stash
+
+SHARING & UPDATING:
+  git push, git pull, git fetch, git remote
+
+INSPECTION:
+  git log, git diff, git show, git bisect, git reflog
+
+USER MANAGEMENT:
+  git config, git config --global user.name/email
+
+GITHUB CLI (gh):
+  gh repo create, gh pr create, gh issue create, gh auth login
+
+AUTOMATION:
+  git submodule, git worktree, git archive, git bundle
+
+================================================================================
+                    ESSENTIAL COMMANDS BY CAREER LEVEL
+================================================================================
+
+BEGINNER (First Week):
+1. git init         - Start repository
+2. git clone        - Get repository
+3. git status       - Check changes
+4. git add          - Stage files
+5. git commit       - Save changes
+6. git log          - View history
+7. git branch       - List branches
+8. git checkout     - Switch branches
+9. git push         - Upload to GitHub
+10. git pull        - Download from GitHub
+
+INTERMEDIATE (Month 1):
+1. git diff         - Compare changes
+2. git stash        - Temporarily save work
+3. git merge        - Combine branches
+4. git reset        - Undo staging
+5. git rebase       - Clean commit history
+6. git tag          - Mark releases
+7. git remote       - Manage remotes
+8. git fetch        - Download without merge
+9. git cherry-pick  - Pick specific commit
+10. git revert      - Undo commit safely
+
+EXPERT (Advanced):
+1. git bisect       - Find bad commit
+2. git reflog       - Recover lost commits
+3. git worktree     - Multi-branch work
+4. git submodule    - Nested repositories
+5. git archive      - Create backups
+6. git bundle       - Transfer repos
+7. git gc           - Optimize repo
+8. git fsck         - Check integrity
+9. git fast-import  - Bulk import
+10. gh CLI commands - GitHub automation
+
+================================================================================
+                    COMMON Git WORKFLOWS
+================================================================================
+
+FIRST TIME SETUP:
+  git config --global user.name "Yukta Patel"
+  git config --global user.email "your.email@example.com"
+  git config --global core.editor "nano"
+
+CREATE NEW REPOSITORY:
+  git init
+  git add .
+  git commit -m "Initial commit"
+  git remote add origin https://github.com/owner/repo.git
+  git push -u origin main
+
+CLONE EXISTING REPOSITORY:
+  git clone https://github.com/owner/repo.git
+  cd repo
+  git branch -a              # View all branches
+  git checkout -b feature origin/feature  # Clone remote branch
+
+WORK ON FEATURE:
+  git checkout -b feature
+  git add .
+  git commit -m "Feature done"
+  git push -u origin feature
+
+CREATE PULL REQUEST:
+  git checkout main
+  git merge feature
+  git push origin main
+  gh pr create --title "Feature PR" --body "Description"
+
+RECOVER LOST COMMIT:
+  git reflog
+  git checkout -b recovery <SHA-from-reflog>
+  git push origin recovery
+
+================================================================================
+                    FOR YOUR AWS/DEVOPS CAREER PATH
+================================================================================
+
+Top 10 Git Commands for DevOps Engineers:
+1.  git clone       - Get AWS deployment code/repos
+2.  git status      - Check what changed before deploy
+3.  git add + commit - Save config changes
+4.  git branch      - Create feature branches for testing
+5.  git merge       - Combine features into main
+6.  git push        - Upload to GitHub/GitLab
+7.  git pull        - Get latest code before deploy
+8.  git log         - Review commit history
+9.  git diff        - See what changed between versions
+10. gh pr create    - Create pull requests for code review
