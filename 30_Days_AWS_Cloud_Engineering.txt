@@ -1,0 +1,961 @@
+# 30 Days of AWS Cloud Engineering
+
+
+## Day 1 - Introduction to Cloud Computing & AWS
+
+**What is it?**  
+Cloud basics, deployment models, AWS overview.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Introduction to Cloud Computing & AWS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Introduction to Cloud Computing & AWS.
+
+**Interview Focus**
+- What is Introduction to Cloud Computing & AWS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Cloud basics, deployment models, AWS overview
+
+
+## Day 2 - AWS Global Infrastructure
+
+**What is it?**  
+Regions, AZs, Edge Locations.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to AWS Global Infrastructure.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating AWS Global Infrastructure.
+
+**Interview Focus**
+- What is AWS Global Infrastructure?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Regions, AZs, Edge Locations
+
+
+## Day 3 - IAM
+
+**What is it?**  
+Users, Groups, Roles, Policies, MFA.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to IAM.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating IAM.
+
+**Interview Focus**
+- What is IAM?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Users, Groups, Roles, Policies, MFA
+
+
+## Day 4 - EC2
+
+**What is it?**  
+Virtual servers and instance types.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to EC2.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating EC2.
+
+**Interview Focus**
+- What is EC2?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Virtual servers and instance types
+
+
+## Day 5 - Linux on AWS
+
+**What is it?**  
+SSH, packages, services.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Linux on AWS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Linux on AWS.
+
+**Interview Focus**
+- What is Linux on AWS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- SSH, packages, services
+
+
+## Day 6 - Storage Fundamentals
+
+**What is it?**  
+Block, File, Object storage.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Storage Fundamentals.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Storage Fundamentals.
+
+**Interview Focus**
+- What is Storage Fundamentals?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Block, File, Object storage
+
+
+## Day 7 - Amazon S3
+
+**What is it?**  
+Buckets, objects, versioning.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Amazon S3.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Amazon S3.
+
+**Interview Focus**
+- What is Amazon S3?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Buckets, objects, versioning
+
+
+## Day 8 - VPC Fundamentals
+
+**What is it?**  
+Virtual networking.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to VPC Fundamentals.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating VPC Fundamentals.
+
+**Interview Focus**
+- What is VPC Fundamentals?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Virtual networking
+
+
+## Day 9 - Route Tables & Internet Gateway
+
+**What is it?**  
+Internet connectivity.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Route Tables & Internet Gateway.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Route Tables & Internet Gateway.
+
+**Interview Focus**
+- What is Route Tables & Internet Gateway?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Internet connectivity
+
+
+## Day 10 - NAT Gateway
+
+**What is it?**  
+Private subnet internet access.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to NAT Gateway.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating NAT Gateway.
+
+**Interview Focus**
+- What is NAT Gateway?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Private subnet internet access
+
+
+## Day 11 - Security Groups
+
+**What is it?**  
+Instance firewall.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Security Groups.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Security Groups.
+
+**Interview Focus**
+- What is Security Groups?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Instance firewall
+
+
+## Day 12 - Network ACLs
+
+**What is it?**  
+Subnet firewall.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Network ACLs.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Network ACLs.
+
+**Interview Focus**
+- What is Network ACLs?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Subnet firewall
+
+
+## Day 13 - Load Balancer
+
+**What is it?**  
+Traffic distribution.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Load Balancer.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Load Balancer.
+
+**Interview Focus**
+- What is Load Balancer?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Traffic distribution
+
+
+## Day 14 - Auto Scaling
+
+**What is it?**  
+Automatic scaling.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Auto Scaling.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Auto Scaling.
+
+**Interview Focus**
+- What is Auto Scaling?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Automatic scaling
+
+
+## Day 15 - Route 53
+
+**What is it?**  
+DNS service.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Route 53.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Route 53.
+
+**Interview Focus**
+- What is Route 53?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- DNS service
+
+
+## Day 16 - RDS
+
+**What is it?**  
+Managed relational databases.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to RDS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating RDS.
+
+**Interview Focus**
+- What is RDS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Managed relational databases
+
+
+## Day 17 - DynamoDB
+
+**What is it?**  
+NoSQL database.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to DynamoDB.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating DynamoDB.
+
+**Interview Focus**
+- What is DynamoDB?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- NoSQL database
+
+
+## Day 18 - CloudWatch
+
+**What is it?**  
+Monitoring and alerts.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to CloudWatch.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating CloudWatch.
+
+**Interview Focus**
+- What is CloudWatch?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Monitoring and alerts
+
+
+## Day 19 - CloudTrail
+
+**What is it?**  
+Audit logging.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to CloudTrail.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating CloudTrail.
+
+**Interview Focus**
+- What is CloudTrail?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Audit logging
+
+
+## Day 20 - AWS Config
+
+**What is it?**  
+Compliance tracking.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to AWS Config.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating AWS Config.
+
+**Interview Focus**
+- What is AWS Config?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Compliance tracking
+
+
+## Day 21 - KMS
+
+**What is it?**  
+Encryption keys.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to KMS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating KMS.
+
+**Interview Focus**
+- What is KMS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Encryption keys
+
+
+## Day 22 - Secrets Manager
+
+**What is it?**  
+Secret storage.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Secrets Manager.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Secrets Manager.
+
+**Interview Focus**
+- What is Secrets Manager?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Secret storage
+
+
+## Day 23 - Lambda
+
+**What is it?**  
+Serverless compute.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Lambda.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Lambda.
+
+**Interview Focus**
+- What is Lambda?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Serverless compute
+
+
+## Day 24 - SNS & SQS
+
+**What is it?**  
+Messaging services.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to SNS & SQS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating SNS & SQS.
+
+**Interview Focus**
+- What is SNS & SQS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Messaging services
+
+
+## Day 25 - CloudFormation
+
+**What is it?**  
+Infrastructure as Code.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to CloudFormation.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating CloudFormation.
+
+**Interview Focus**
+- What is CloudFormation?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Infrastructure as Code
+
+
+## Day 26 - Terraform on AWS
+
+**What is it?**  
+Provisioning automation.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Terraform on AWS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Terraform on AWS.
+
+**Interview Focus**
+- What is Terraform on AWS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Provisioning automation
+
+
+## Day 27 - Docker on AWS
+
+**What is it?**  
+Containers.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Docker on AWS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Docker on AWS.
+
+**Interview Focus**
+- What is Docker on AWS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Containers
+
+
+## Day 28 - Amazon ECS
+
+**What is it?**  
+Container orchestration.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Amazon ECS.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Amazon ECS.
+
+**Interview Focus**
+- What is Amazon ECS?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Container orchestration
+
+
+## Day 29 - Cost Optimization
+
+**What is it?**  
+Reducing AWS spend.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Cost Optimization.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Cost Optimization.
+
+**Interview Focus**
+- What is Cost Optimization?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- Reducing AWS spend
+
+
+## Day 30 - Enterprise Project
+
+**What is it?**  
+End-to-end architecture.
+
+**Why it exists?**  
+Helps organizations build scalable, secure and cost-effective cloud solutions.
+
+**Real-world example**  
+Used by companies such as Netflix, Airbnb, Amazon, Spotify or large enterprises depending on the service.
+
+**Learning Resources**
+- AWS Docs: https://docs.aws.amazon.com
+- AWS Skill Builder: https://explore.skillbuilder.aws
+- Tech With Lucy: https://www.youtube.com/@TechWithLucy
+
+**Hands-on Lab**
+- Create and test a lab related to Enterprise Project.
+- Document screenshots and findings.
+
+**Mini Project**
+- Build a small use case demonstrating Enterprise Project.
+
+**Interview Focus**
+- What is Enterprise Project?
+- Why is it used?
+- When would you choose it?
+
+**Key Concepts**
+- End-to-end architecture
