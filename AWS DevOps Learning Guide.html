@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS DevOps Learning Guide</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #111831;
+      --text: #e8eefc;
+      --muted: #b7c3e1;
+      --accent: #66d9ef;
+      --accent2: #8bffb0;
+      --border: rgba(255,255,255,.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      background: linear-gradient(180deg, #08101e, #0b1020);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header, main, footer {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .hero, .card {
+      background: rgba(17, 24, 49, .92);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.2);
+    }
+    .hero {
+      margin-top: 24px;
+      background: linear-gradient(135deg, rgba(102,217,239,.15), rgba(139,255,176,.10));
+    }
+    h1 { margin-top: 0; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { margin-top: 0; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      margin: 0 8px 8px 0;
+      border-radius: 999px;
+      background: rgba(102,217,239,.12);
+      color: var(--accent);
+      font-size: .82rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .two {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+    }
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      background: rgba(17,24,49,.9);
+    }
+    th, td {
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: #fff;
+      background: rgba(255,255,255,.03);
+    }
+    code {
+      background: rgba(255,255,255,.07);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #fff;
+    }
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent2);
+      background: rgba(139,255,176,.08);
+      border-radius: 10px;
+      color: #ddffe7;
+    }
+    @media (max-width: 860px) {
+      .two { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <span class="pill">AWS</span>
+      <span class="pill">DevOps</span>
+      <span class="pill">Beginner to Advanced</span>
+      <h1>AWS DevOps Learning Guide</h1>
+      <p>A structured 7-day roadmap covering AWS fundamentals, networking, CI/CD, deployment automation, monitoring, and a real project implementation path.</p>
+      <p class="note">Best for GitHub Pages, profile repositories, and personal study tracking.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Learning Resources</h2>
+      <div class="grid">
+        <div>
+          <h3>Official AWS Docs</h3>
+          <ul>
+            <li><a href="https://docs.aws.amazon.com/" target="_blank" rel="noopener">AWS Documentation</a></li>
+            <li><a href="https://aws.amazon.com/devops/" target="_blank" rel="noopener">AWS DevOps</a></li>
+            <li><a href="https://aws.amazon.com/codepipeline/" target="_blank" rel="noopener">AWS CodePipeline</a></li>
+            <li><a href="https://docs.aws.amazon.com/iam/" target="_blank" rel="noopener">AWS IAM Documentation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>YouTube Resources</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/@StephaneMaarek" target="_blank" rel="noopener">Stephane Maarek</a></li>
+            <li><a href="https://www.youtube.com/@AbhishekVeeramalla" target="_blank" rel="noopener">Abhishek Veeramalla</a></li>
+            <li><a href="https://www.youtube.com/watch?v=zA8guDqfv40" target="_blank" rel="noopener">FreeCodeCamp AWS Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+      <h2>7-Day Roadmap</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Focus</th>
+              <th>Topics</th>
+              <th>Use Cases</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Day 1</td>
+              <td>AWS Foundations</td>
+              <td>Regions, AZs, IAM, roles, CLI, S3</td>
+              <td>Secure access, storage, and AWS basics.</td>
+            </tr>
+            <tr>
+              <td>Day 2</td>
+              <td>Networking & Compute</td>
+              <td>VPC, subnets, IGW, NAT, route tables, SG, NACL, EC2</td>
+              <td>Design and secure cloud infrastructure.</td>
+            </tr>
+            <tr>
+              <td>Day 3</td>
+              <td>CI/CD Foundations</td>
+              <td>CodeCommit, Artifact, pipeline concepts</td>
+              <td>Understand release workflows.</td>
+            </tr>
+            <tr>
+              <td>Day 4</td>
+              <td>CodeBuild</td>
+              <td>buildspec.yml, environments, artifacts, logs</td>
+              <td>Automate builds and tests.</td>
+            </tr>
+            <tr>
+              <td>Day 5</td>
+              <td>CodeDeploy</td>
+              <td>AppSpec, deployment groups, hooks, blue/green</td>
+              <td>Safely deploy to servers or containers.</td>
+            </tr>
+            <tr>
+              <td>Day 6</td>
+              <td>CodePipeline</td>
+              <td>Source → Build → Deploy, approvals, SNS</td>
+              <td>Orchestrate full automation.</td>
+            </tr>
+            <tr>
+              <td>Day 7</td>
+              <td>Real Project</td>
+              <td>CodeCommit → CodeBuild → CodeDeploy → EC2</td>
+              <td>Build a working CI/CD pipeline.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="two" style="margin-top:16px;">
+      <div class="card">
+        <h2>Core Services</h2>
+        <ul>
+          <li><strong>IAM:</strong> Users, groups, policies, and roles. IAM is the main AWS access control service. [web:1][web:10]</li>
+          <li><strong>S3:</strong> Object storage for artifacts, logs, backups, and static websites.</li>
+          <li><strong>EC2:</strong> Virtual servers for application workloads.</li>
+          <li><strong>VPC:</strong> Private network design with subnets and routing.</li>
+          <li><strong>CodeBuild:</strong> Managed builds and tests. AWS describes it as a fully managed build service. [web:6]</li>
+          <li><strong>CodePipeline:</strong> Automates build, test, and deploy phases after code changes. [web:5][web:2]</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Project Ideas</h2>
+        <ul>
+          <li>EC2 CI/CD pipeline.</li>
+          <li>Container pipeline with ECR and ECS.</li>
+          <li>Serverless pipeline with Lambda and SAM.</li>
+          <li>Multi-environment dev/staging/prod pipeline.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prepared for GitHub-ready sharing and personal AWS DevOps learning.</p>
+  </footer>
+</body>
+</html>
