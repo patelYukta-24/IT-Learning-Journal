@@ -1,6 +1,6 @@
 # Day 19: Networking Roadmap for DevOps & Cloud Professionals
 
-> **DevOps Transformation** | Cloud & Infrastructure Series
+> **NexusCorp DevOps Transformation** | Cloud & Infrastructure Series
 
 ---
 
